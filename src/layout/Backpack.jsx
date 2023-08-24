@@ -74,6 +74,7 @@ export default function Backpack() {
     <>
       <Menu />
       <Body>
+        {!location.state?.equip && 
         <>
           <input type='number' placeholder='item ID' onChange={(event) => setItemAdm(event.target.value)} value={itemAdm} />
           <input type='number' placeholder='item count' onChange={(event) => setItemCountAdm(event.target.value)} value={itemCountAdm} />
@@ -81,7 +82,7 @@ export default function Backpack() {
           <input type='number' placeholder='resource count' onChange={(event) => setResourceAdm(event.target.value)} value={resourceAdm} />
           <button onClick={addResourceTest}>Adicionar resource (ADM)</button>
           <button onClick={clearItems}>Limpar Inventario</button>
-        </>
+        </>}
         <ListItems>
           {inventory?.map((el, index) => {
             return <Item key={index}

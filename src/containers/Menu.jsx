@@ -12,7 +12,10 @@ export default function Menu() {
           <StyledLink to={"/map"}>Map</StyledLink>
         </li>
         <li>
-          <StyledLink to={"/"}>iMagic</StyledLink>
+          <StyledLink to={"/imagic"}>iMagic</StyledLink>
+        </li>
+        <li>
+          <StyledLink to={"/story"}>Story</StyledLink>
         </li>
       </ul>
     </Body> 
